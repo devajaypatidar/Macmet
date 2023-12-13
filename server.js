@@ -29,8 +29,8 @@ app.get('/service', (req, res) =>{
   res.sendFile(__dirname+'/service.html');
 })
 
-app.get('/carrier',(req, res)=>{
-  res.sendFile(__dirname+'/carrier.html');
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile(__dirname+'/sitemap.xml');
 });
 
 app.get('*', function(req, res){
