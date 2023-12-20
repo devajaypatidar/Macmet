@@ -22,7 +22,7 @@ app.get('/why', (req, res) =>{
 })
 
 app.get('/team', (req, res) =>{
-  res.sendFile(__dirname+'/team.html');
+  res.render('team');
 })
 
 app.get('/service', (req, res) =>{
@@ -33,9 +33,20 @@ app.get('/sitemap.xml', (req, res) => {
   res.sendFile(__dirname+'/sitemap.xml');
 });
 
+app.get('/intern',(req,res)=>{
+  res.render("intern");
+});
+
+app.post('/ckeckcertificate',(req,res)=>{
+  res.render("success");
+})
+
 app.get('*', function(req, res){
   res.status(404).sendFile(__dirname+'/404.html');
 })
+
+
+
 
 
 app.listen(port, () => {

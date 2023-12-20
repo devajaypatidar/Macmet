@@ -971,3 +971,11 @@ a:focus {
       transform: translateX(100%);
   }
 } */ 
+
+
+.form{
+  padding:10%;
+  align-items: centre;
+  font-size: 25px;
+}
+
