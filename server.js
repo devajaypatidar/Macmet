@@ -33,9 +33,6 @@ app.get('/sitemap.xml', (req, res) => {
   res.sendFile(__dirname+'/sitemap.xml');
 });
 
-app.get('/intern',(req,res)=>{
-  res.render("intern");
-});
 
 app.post('/ckeckcertificate',(req,res)=>{
   res.render("success");
