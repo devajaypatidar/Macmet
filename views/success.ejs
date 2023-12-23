@@ -38,8 +38,9 @@ h1 a{color:#131313; font-weight:bold;}
   overflow: hidden;
   width: 100%;
   text-align: center;
-  height:368px;
+  height:auto;
   border:none;
+  border-radius: 15px;
 }
 .profile-card-3 .background-block {
     float: left;
@@ -81,11 +82,11 @@ h1 a{color:#131313; font-weight:bold;}
 .profile-card-3 .profile {
   border-radius: 50%;
   position: absolute;
-  bottom: 50%;
+  bottom: 60%;
   left: 50%;
   max-width: 100px;
   opacity: 1;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 20px 20px rgba(0, 0, 0, 0.5);
   border: 2px solid rgba(255, 255, 255, 1);
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
@@ -208,10 +209,10 @@ h1 a{color:#131313; font-weight:bold;}
                   </div>
                   <div class="card-content">
                       <h2><%= intern.name %><small> <%= intern.position %></small></h3>
-                        <p><%= intern.name %>is a  <%= intern.position %>at Macmet Technologies</p>
+                        <p><%= intern.name %> is a  <%= intern.position %> at Macmet Technologies</p>
                         <p ><%= intern.dateOfJoining.toLocaleDateString() %> - <%= intern.dateOfCompletion.toLocaleDateString() %></p>
                         <p><strong>Certificate Number:</strong> <%= intern.certificateNumber %></p>
-                        <p><strong>Email Address:</strong> <%= intern.emailAddress %></p>
+                        <p><strong>Certificate Number:</strong> <%= intern.emailAddress %></p>
                       <!-- <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div> -->
                       </div>
                   </div>
